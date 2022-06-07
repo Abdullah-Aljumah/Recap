@@ -1,0 +1,132 @@
+.divFormNewTask {
+  width: 88%;
+}
+.formNewTask {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.inputNewTask {
+  margin-right: 1%;
+  width: 80%;
+  height: 4vh;
+  padding: 1%;
+  transition: 0.3s ease-in-out;
+}
+
+.inputNewTask:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid black;
+}
+
+.submitNewTask {
+  width: 11%;
+  height: 5.80vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  font-size: 4vh;
+  transition: 0.3s ease-in-out;
+  margin-left: 0.9%;
+}
+
+.submitNewTask:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(184, 184, 184, 0.562);
+}
+
+.clearDiv {
+  width: 12%;
+  margin-top: -0.2%;
+
+}
+
+.Clear {
+  height: 5.80vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  transition: 0.3s ease-in-out;
+  margin-top: 16%;
+  width: 100%;
+}
+
+.Clear:hover {
+  transition: 0.3s ease-in-out;
+  background-color: rgba(231, 28, 28, 0.684);
+}
+
+.imgUpdate {
+  width: 3vh;
+}
+
+.divNewTask {
+  display: flex;
+  margin-top: 5%;
+  border-top: 1px solid rgba(234, 232, 232, 0.586);
+}
+
+.allTasks {
+  min-height: 71vh;
+}
+
+.allTasksAndInput {
+  border: 1px solid black;
+  box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.35);
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 31%;
+  padding: 1%;
+  min-height: 75vh;
+}
+
+.task {
+  display: flex;
+}
+
+.inputsUD {
+  display: flex;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.updateAndDeleteInput {
+  height: 5vh;
+  width: 6vh;
+  font-size: 2vh;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+}
+
+.taskName {
+  width: 70%;
+  margin-left: 1%;
+  font-size: 1.5vh;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(234, 232, 232, 0.586);
+}
+
+#deleteInput {
+  position: absolute;
+  margin-left: 1.5%;
+  font-size: 4.1vh;
+}
+
+#lineTask {
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.603);
+}
+
+#updateButton {
+  margin-left: 100%;
+  width: 3.5vh;
+}
