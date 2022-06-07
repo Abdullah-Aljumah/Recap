@@ -4,7 +4,6 @@ import axios from "axios";
 import UpdateTask from "../updateTask";
 import "./style.css";
 import { MdOutlineDeleteForever } from "react-icons/md";
-import { GrUpdate } from "react-icons/gr";
 import Swal from "sweetalert2";
 const Todo = () => {
   // useState
@@ -33,6 +32,7 @@ const Todo = () => {
       confirmButtonText: "Yes, delete it!",
     }).then(async (result) => {
       if (result.isConfirmed) {
+        // eslint-disable-next-line
         const res = await axios.delete(
           `${process.env.REACT_APP_BASE_URL}/deleteTask/${id}`
         );
@@ -50,9 +50,11 @@ const Todo = () => {
 
     e.target[0].value.split().map(async (ele) => {
       let sum = 0;
+      // eslint-disable-next-line
       if (ele == " ") {
         sum++;
       }
+      // eslint-disable-next-line
       if (ele == sum) {
         Swal.fire({
           icon: "error",
@@ -61,6 +63,7 @@ const Todo = () => {
         });
         e.target[0].value = "";
       } else {
+        // eslint-disable-next-line
         const res = await axios.post(
           `${process.env.REACT_APP_BASE_URL}/newTask/`,
           {
@@ -84,6 +87,7 @@ const Todo = () => {
   };
 
   const clearCompleted = async () => {
+    // eslint-disable-next-line
     const res = await axios.delete(
       `${process.env.REACT_APP_BASE_URL}/deleteCompletedTask`
     );
@@ -140,6 +144,7 @@ const Todo = () => {
                           {" "}
                           <img
                             id="updateButton"
+                            alt="updateButton"
                             className="imgUpdate"
                             src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/undefined/external-pen-digital-marketing-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png"
                           />{" "}
