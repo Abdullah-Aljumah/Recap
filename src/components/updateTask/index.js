@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import { useState } from "react";
 import "./style.css";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
@@ -18,6 +17,7 @@ const UpdateTask = ({ id, setButtonUpdate, setUpdate, getTasks }) => {
       Swal.fire(`The new task is : ${newTask}`);
     }
     if (newTask.length > 0) {
+      // eslint-disable-next-line
       const res = await axios.put(
         `${process.env.REACT_APP_BASE_URL}/updateTask/${id}`,
         {
@@ -32,6 +32,7 @@ const UpdateTask = ({ id, setButtonUpdate, setUpdate, getTasks }) => {
 
   useEffect(() => {
     newTask();
+    // eslint-disable-next-line
   }, []);
 
   return <div></div>;
