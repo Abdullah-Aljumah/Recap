@@ -121,6 +121,7 @@ const Todo = () => {
                     {/* Task name */}
                     <div className="taskName">
                       <h1
+                      className="h1Task"
                         onClick={() => {
                           completeTask(item._id);
                         }}
@@ -207,7 +208,7 @@ const Todo = () => {
                 title="Add new task"
               />
               {/* Input submit a new task */}
-              <input type="submit" value="+" className="submitNewTask" />
+              <input type="submit" value="Add" className="submitNewTask" />
             </form>
           </div>
           <div className="clearDiv">
