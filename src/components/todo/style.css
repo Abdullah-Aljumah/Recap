@@ -75,7 +75,6 @@
   width: 30%;
   margin-top: 5%;
   margin-left: 31%;
-  /* background-color: red; */
   min-height: 75vh;
 }
 
@@ -144,7 +143,7 @@
   width: 3.5vh;
 }
 
-@media only screen and (max-height: 627px) {
+/* @media only screen and (max-height: 627px) {
   .allTasksAndInput {
     margin-left: 5%;
     width: 60vh;
@@ -236,16 +235,17 @@
     width: 6vh;
     margin-top: -0.5%;
   }
-}
+} */
 
-@media only screen and (max-height: 627px) {
+@media only screen and (max-height: 1937px) {
   .allTasksAndInput {
     margin-left: 5%;
-    width: 60vh;
+    width: 45vh;
   }
 
   .taskName {
     width: 73%;
+    border-bottom: 1px solid rgba(123, 122, 122, 0.555);
   }
 
   .h1Task {
@@ -253,13 +253,13 @@
   }
 
   #deleteInput {
-    margin-left: 6%;
-    margin-top: -1.2%;
+    margin-left: 8%;
+    margin-top: -1.8%;
     width: 1vh;
     font-size: 3.8vh;
   }
   #btnUpdate {
-    width: 2vh;
+    width: 1vh;
   }
 
   .imgUpdate {
@@ -270,6 +270,7 @@
     width: 95%;
     margin-left: 2%;
     margin-bottom: 2%;
+    font-size: 2.5vh;
   }
 
   .submitNewTask {
@@ -281,5 +282,17 @@
     margin-right: 2%;
     margin-left: 0.5%;
     width: 8vh;
+    font-size: 2.5vh;
+    margin-top: -1%;
+  }
+
+  .date {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h2Date {
+    font-size: 2.5svh;
   }
 }
