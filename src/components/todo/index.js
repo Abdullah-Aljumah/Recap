@@ -121,14 +121,30 @@ const Todo = () => {
                     {/* Task name */}
                     <div className="taskName">
                       <h1
-                      className="h1Task"
+                        className="h1Task"
                         onClick={() => {
                           completeTask(item._id);
                         }}
                         // eslint-disable-next-line
                         id={item.completed == true ? "lineTask" : "noneLine"}
                       >
-                        - {item.task}
+                        {
+                          // eslint-disable-next-line
+                          item.completed == true ? (
+                            <img
+                              className="check"
+                              alt="check"
+                              src="https://cdn.pixabay.com/photo/2016/03/31/19/14/check-box-1294836__340.png"
+                            />
+                          ) : (
+                            <img
+                              alt="check"
+                              className="check"
+                              src="https://cdn-icons-png.flaticon.com/512/61/61221.png"
+                            />
+                          )
+                        }
+                        {item.task}
                       </h1>
                     </div>
                     {/* Buttons update and delete and component update task */}
@@ -137,6 +153,7 @@ const Todo = () => {
                       {buttonUpdate ? (
                         <button
                           className="updateAndDeleteInput"
+                          id="btnUpdate"
                           onClick={() => {
                             setUpdate(!update);
                             setTaskId(item._id);
