@@ -144,7 +144,7 @@
   width: 3.5vh;
 }
 
-@media only screen and (min-height: 844px) {
+@media only screen and (max-height: 844px) {
   .allTasksAndInput {
     margin-left: 4%;
     width: 42vh;
