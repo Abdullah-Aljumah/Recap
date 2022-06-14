@@ -75,6 +75,7 @@
   width: 30%;
   margin-top: 5%;
   margin-left: 31%;
+  /* background-color: red; */
   min-height: 75vh;
 }
 
@@ -143,7 +144,7 @@
   width: 3.5vh;
 }
 
-@media only screen and (max-height: 844px) {
+@media only screen and (min-height: 844px) {
   .allTasksAndInput {
     margin-left: 4%;
     width: 42vh;
@@ -181,6 +182,7 @@
     margin-left: 2%;
     width: 8vh;
   }
+  
   .clearDiv {
     margin-right: 2%;
     margin-left: 0.5%;
