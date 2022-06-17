@@ -101,7 +101,7 @@ const Todo = () => {
 
   //
   return (
-    <div>
+    <div className="all">
       <div className="allTasksAndInput">
         <div className="allTasks">
           {/* Date */}
