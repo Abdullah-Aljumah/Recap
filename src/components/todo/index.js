@@ -106,7 +106,8 @@ const Todo = () => {
         <div className="allTasks">
           {/* Date */}
           <div className="date">
-            <h2 className="h2Date">{date.slice(0, 15)}</h2>
+            <h2 className="h2Date">Me and my soulmate </h2>
+            {/* {date.slice(0, 15)} */}
           </div>
 
           {/* All the task */}

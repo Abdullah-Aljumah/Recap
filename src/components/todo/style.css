@@ -103,8 +103,13 @@
   justify-content: center;
   font-size: 15px;
   padding: 0;
-  background-color: rgba(37, 27, 236, 0.56);
+  background-color: rgba(19, 97, 214, 0.885);
   border-bottom: 1px solid black;
+  color: white;
+}
+
+.h2Date {
+  margin-top: 2%;
 }
 
 .check {
@@ -132,6 +137,7 @@
   font-size: 4.1vh;
   margin-top: -0.6%;
   background-color: rgba(255, 255, 255, 0);
+  color: black;
 }
 
 #lineTask {
