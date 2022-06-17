@@ -151,7 +151,7 @@
 
 @media only screen and (max-height: 640px) and (min-height: 360px) {
   .allTasksAndInput {
-    width: 40vh;
+    width: 44vh;
     margin-left: 15%;
   }
   #updateButton {
@@ -207,9 +207,8 @@
 }
 
 @media only screen and (max-height: 896px) and (min-height: 414px) {
- 
   .allTasksAndInput {
-    width: 40vh;
+    width: 44vh;
     margin-left: 7%;
   }
   #updateButton {
@@ -234,6 +233,11 @@
 
   .inputNewTask {
     font-size: 1.5vh;
+    width: 65%;
+  }
+
+  .submitNewTask {
+    width: 20%;
   }
 
   .h1Task {
@@ -250,8 +254,9 @@
     width: 85%;
   }
   .clearDiv {
-    width: 13%;
-    margin-top: -0.3%;
+    width: 17%;
+    margin-top: -0.8%;
+    margin-left: -5%;
   }
 
   .Clear {
