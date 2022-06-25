@@ -67,7 +67,7 @@
 .divNewTask {
   display: flex;
   position: sticky;
-  bottom: 5%;
+  bottom: 2%;
   margin-top: 5%;
   height: 9vh;
   background-color: white;
@@ -167,7 +167,7 @@
 @media only screen and (max-height: 900px) and (min-height: 360px) {
   .allTasksAndInput {
     width: 44vh;
-    margin-left: 15%;
+    margin-left: 12%;
   }
   #updateButton {
     margin-left: 10%;
