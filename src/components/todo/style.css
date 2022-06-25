@@ -1,6 +1,7 @@
 .divFormNewTask {
   width: 86%;
 }
+
 .formNewTask {
   display: flex;
   justify-content: center;
@@ -28,11 +29,13 @@
   border-radius: 5%;
   transition: 0.3s ease-in-out;
   margin-left: 0.9%;
+  color: white;
+  background-color: rgba(19, 97, 214, 0.885);
 }
 
 .submitNewTask:hover {
   transition: 0.3s ease-in-out;
-  background-color: rgba(184, 184, 184, 0.562);
+  background-color: rgba(11, 106, 247, 0.584);
 }
 
 .clearDiv {
@@ -48,6 +51,8 @@
   transition: 0.3s ease-in-out;
   margin-top: 16%;
   width: 100%;
+  background-color: rgba(19, 97, 214, 0.885);
+  color: white;
 }
 
 .Clear:hover {
@@ -61,7 +66,11 @@
 
 .divNewTask {
   display: flex;
+  position: sticky;
+  bottom: 5%;
   margin-top: 5%;
+  height: 9vh;
+  background-color: white;
   border-top: 1px solid rgba(234, 232, 232, 0.586);
 }
 
@@ -212,7 +221,7 @@
   }
 }
 
-@media only screen and (max-height: 896px) and (min-height: 414px) {
+@media only screen and (max-height: 648px) and (min-height: 414px) {
   .allTasksAndInput {
     width: 44vh;
     margin-left: 7%;

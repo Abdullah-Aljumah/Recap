@@ -24,11 +24,11 @@ const Todo = () => {
   const deleteTask = async (id) => {
     Swal.fire({
       title: "Are you sure?",
-      text: "You won't be able to revert this!",
+      text: "ليه الحذف ؟؟",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
       confirmButtonText: "Yes, delete it!",
     }).then(async (result) => {
       if (result.isConfirmed) {
@@ -87,11 +87,23 @@ const Todo = () => {
   };
 
   const clearCompleted = async () => {
-    // eslint-disable-next-line
-    const res = await axios.delete(
-      `${process.env.REACT_APP_BASE_URL}/deleteCompletedTask`
-    );
-    getTasks();
+    Swal.fire({
+      title: "Are you sure?",
+      text: "بيحذف كل المكتملات",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Yes, delete it!",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        // eslint-disable-next-line
+        const res = await axios.delete(
+          `${process.env.REACT_APP_BASE_URL}/deleteCompletedTask`
+        );
+        getTasks();
+      }
+    });
   };
 
   // Invoke get all tasks
@@ -104,10 +116,10 @@ const Todo = () => {
     <div className="all">
       <div className="allTasksAndInput">
         <div className="allTasks">
-          {/* Date */}
+          {/* Name of the list */}
           <div className="date">
-            <h2 className="h2Date">Me and my soulmate </h2>
-            {/* {date.slice(0, 15)} */}
+            <h2 className="h2Date"> List </h2>
+            {/* <h2 className="h2Date">Me & My Soulmate </h2> */}
           </div>
 
           {/* All the task */}
@@ -222,7 +234,6 @@ const Todo = () => {
                 name="newTask"
                 placeholder="Create new task..."
                 className="inputNewTask"
-                maxLength={10}
                 title="Add new task"
               />
               {/* Input submit a new task */}
