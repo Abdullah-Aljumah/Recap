@@ -118,8 +118,8 @@ const Todo = () => {
         <div className="allTasks">
           {/* Name of the list */}
           <div className="date">
-            <h2 className="h2Date"> List </h2>
-            {/* <h2 className="h2Date">Me & My Soulmate </h2> */}
+            {/* <h2 className="h2Date"> List </h2> */}
+            <h2 className="h2Date">Me & My Soulmate </h2>
           </div>
 
           {/* All the task */}
