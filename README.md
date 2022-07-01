@@ -21,8 +21,11 @@
     
     Which of the following has a well-established association with gastroesophageal reflux?
     A. Chronic sinusitis
+
     B. Dental erosion
+
     C. Pulmonary fibrosis
+
     D. Recurrent aspiration pneumonia
     
     E. Sleep apnea
